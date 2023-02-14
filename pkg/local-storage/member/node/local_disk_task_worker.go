@@ -143,7 +143,6 @@ func (m *manager) handleDiskStateChange(localDisk *apisv1alpha1.LocalDisk) {
 	default:
 		logCtx.Error("Invalid localDisk state")
 	}
-	return
 }
 
 func (m *manager) needResizePVCapacity(currentCapacity, recordCapacity int64) bool {

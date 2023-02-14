@@ -88,6 +88,12 @@ type LocalDiskVolumeStatus struct {
 	// UsedCapacityBytes is the real used capacity in bytes
 	UsedCapacityBytes int64 `json:"usedCapacityBytes,omitempty"`
 
+	// TotalINodes is the total inodes of the volume's filesystem
+	TotalInodes int64 `json:"totalInode,omitempty"`
+
+	// UsedInode is the used inodes of the volume's filesystem
+	UsedInodes int64 `json:"usedInode,omitempty"`
+
 	// MountPoints
 	MountPoints []MountPoint `json:"mountPoints,omitempty"`
 
